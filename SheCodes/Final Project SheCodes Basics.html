@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandwiches🥪</title>
+    <style>
+      .container{
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 30px 60px;
+
+      }
+                body {
+                background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);;
+                }
+                h1 {
+                  text-align: center;
+                  color: #eb6f86;
+                  font-family: verdana;
+                  font-weight: bolder;
+                }
+                h2 {
+                  text-align: center;
+                  color: #eb6f86;
+                  padding: 15px;
+                  font-size: 18px;
+                  font-family: verdana;      }
+                .two {
+                  display: block;
+                  margin: 20px auto;
+                  padding: 20px 30px;
+                  background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+                border: none;
+                  color: white;
+                font-family: verdana;
+                font-weight: bold;
+                font-size: 16px;
+                border-radius: 25px;
+                box-shadow: 5px 5px 7px rgba(0,0,0, 0.3);
+                transition: all 200ms ease-in-out;
+
+              }
+              .two:hover{
+                  cursor: pointer;
+                  opacity: 0.8;
+
+              }
+                img {
+                  display: block;
+                  margin: 0 auto;
+                  max-width: 100%;
+                  border-radius: 10px;
+                }
+                p {
+                  line-height: 2;
+                  font-size: 14px;
+                  font-family: verdana;
+                    sans-serif;
+                    margin: 20px 0 0 10px;
+                }
+                .browsePinterest {
+                  color: #ff0000;
+                  display: block;
+                  font-size: 13px;
+                  margin-top: 15px;
+                padding: 0 0 20px 0;
+                  text-decoration: none;
+                  font-family: verdana;
+                }
+                .browsePinterest:hover {
+                  text-decoration: underline;
+                }
+                .footer{
+        text-align: center;
+                }
+                .one{
+                    max-width: 600px;
+                    background:white;
+                    border-radius: 25px;
+                    border: none;
+                    padding: 30px 30px;
+                }
+                .one:hover{
+                    border: none;
+                }
+                .highlight{
+                    background-color: #feb4c1;
+                }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="one">
+        <h1>I Love Sandwiches</h1>
+        <h2>
+          <em>
+            <hr />
+            ✨and here's why you should too✨
+            <hr />
+          </em>
+        </h2>
+        <img
+          src="https://gourmetdemexico.com.mx/wp-content/uploads/2017/06/field_image_sandwich-huevo.jpg"
+          alt="Sandwich"
+        />
+        <p>
+          A pair of crunchy, toasted bread slices hugging any of your favorite
+          ingredients; accompanied with infinite options of salsas, dressings
+          and/ or spreadable ingredients. Sandwiches are the deffinition of
+          diversity and we love everything about them. Typically, they are
+          savory and
+          <span class="highlight">will make a delicious, balanced meal</span>
+          that'll provide you with cereals, vegetables, protein, and sometimes
+          even healthy fats. If that weren't enough to be convinced that
+          sandiches are the real MVP, you can also have sweet sandwiches. That's
+          right, this meal can be found almost anywhere and
+          <span class="highlight"
+            >their versatility will help you find the perfect match for your
+            tatse,</span
+          >
+          just like a soulmate (pretty much a soulmate).
+          <br />
+          <a
+            href="https://www.pinterest.com.mx/search/pins/?q=best%20sandwich%20recipes&rs=typed&term_meta[]=best%7Ctyped&term_meta[]=sandwich%7Ctyped&term_meta[]=recipes%7Ctyped"
+            target="_blank"
+            class="browsePinterest"
+            >Browse sandwich recipes on Pinterest</a
+          >
+        </p>
+        <button class="two">👉Buy ingredients to make a sandwich</button>
+        <br />
+        <p class="footer">
+          This page was built by
+          <a href="https://www.instagram.com/caroruiza/" target="_blank">
+            Caro Ruiz
+          </a>
+          ‍💻
+        </p>
+      </button>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! We'll be in touch via email. In the meantime, have a lot of sandwiches" +
+            emoji
+        );
+      }
+      let button = document.querySelector(".two");
+      button.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
